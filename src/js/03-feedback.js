@@ -25,6 +25,8 @@ const fromLocal = JSON.parse(localStorage.getItem('feedback-form-state'));
 if (fromLocal) {
   inputEmail.value = fromLocal.email;
   inputMessage.value = fromLocal.message;
+  formInput.email = fromLocal.email;
+  formInput.message = fromLocal.message;
 }
 
 const submitForm = (event) => {
